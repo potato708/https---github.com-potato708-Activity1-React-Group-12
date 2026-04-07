@@ -1,39 +1,49 @@
-import './Home.css';
+import "./Home.css";
 
-const Home = () => {
-  const members = [
-    { name: "JOEMARIE G. VALENTINO", role: "Team Lead" },
-    { name: "JUN MARK M. CABULONG", role: "Developer" },
-    { name: "KATE S. COMONICAL", role: "Designer" }
-  ];
-
+function App() {
   return (
-    <div className="landing-container">
-      <header className="hero-section">
-        <h1>Activity 1: Group Overview</h1>
-        <p>Welcome to our simple Home page. We are a dedicated team focused on building efficient React applications.</p>
+    <div className="container">
+      <header className="header">
+        <h1>Group 12 Landing Page</h1>
+        <p>
+          Welcome to our group page! We are passionate IT students who enjoy
+          learning web development and building creative projects using React.
+        </p>
       </header>
 
-      <section className="members-section">
-        <h2>Our Team Members</h2>
-        <div className="members-grid">
-          {members.map((member, index) => (
-            <div key={index} className="member-card">
-              <div className="avatar-placeholder">
-                {member.name.charAt(0)}
-              </div>
-              <h3>{member.name}</h3>
-              <p>{member.role}</p>
-            </div>
-          ))}
+      <section className="members">
+        <h2>Meet Our Team</h2>
+
+        <div className="card">
+          <h3>JOEMARIE G. VALENTINO</h3>
+          <p>
+            Joemarie is a dedicated student who enjoys exploring programming
+            concepts and improving his coding skills.
+          </p>
+        </div>
+
+        <div className="card">
+          <h3>JUN MARK M. CABULONG</h3>
+          <p>
+            Jun Mark is passionate about web development and teamwork. He loves
+            creating simple and functional designs.
+          </p>
+        </div>
+
+        <div className="card">
+          <h3>KATE S. COMONICAL</h3>
+          <p>
+            Kate is creative and detail-oriented, bringing ideas to life through
+            design and collaboration.
+          </p>
         </div>
       </section>
 
       <footer className="footer">
-        <p>&copy; 2026 Activity 1 - Group 6</p>
+        <p>© 2026 Group 12 | All Rights Reserved</p>
       </footer>
     </div>
   );
-};
+}
 
-export default Home;
+export default App;
