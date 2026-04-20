@@ -31,7 +31,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: nowrap;   /* 🔥 FORCE 1 LINE */
+  flex-wrap: nowrap;   
   margin: 0 auto;
   display: flex;
   flex-direction: row;

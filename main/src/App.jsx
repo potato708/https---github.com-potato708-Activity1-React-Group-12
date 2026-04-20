@@ -1,12 +1,7 @@
-import Home from './LandingPage/Home' // C
-import './App.css'
+import Activity2 from "./pages/Activity2";
 
 function App() {
-  return (
-    <>
-      <Home />
-    </>
-  )
+  return <Activity2 />;
 }
 
-export default App
+export default App;
