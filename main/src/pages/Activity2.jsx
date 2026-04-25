@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./Activity2.css"; 
 
-function Activity2() {
+const Activity2 = () => {
   const [count, setCount] = useState(0);
   const [status, setStatus] = useState("Start counting!");
 
   useEffect(() => {
     if (count === 0) {
       setStatus("Back at the start.");
-    } else if (count > 10) {
-      setStatus("High score! Count is over 10.");
+    } else if (count > 20) {
+      setStatus("High score! Count is over 20.");
     } else if (count < 0) {
       setStatus("Going into the negatives!");
     } else {

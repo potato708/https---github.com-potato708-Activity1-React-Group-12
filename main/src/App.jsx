@@ -1,7 +1,17 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Activity2 from "./pages/Activity2";
 
-function App() {
-  return <Activity2 />;
-}
+
+
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+
+        <Route path="/" element={<Activity2 />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;
